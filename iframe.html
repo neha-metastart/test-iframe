@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Iframe Ad</title>
+  </head>
+  <body>
+    <h1 style="color: white">Test IFrame Ad</h1>
+
+    <script>
+      window.onload = function () {
+        window.parent.postMessage(
+          {
+            type: "IMAGE_URL_CHANGE",
+            url: "https://www.stringmetaverse.com/",
+          },
+          "*"
+        );
+      };
+    </script>
+  </body>
+</html>
